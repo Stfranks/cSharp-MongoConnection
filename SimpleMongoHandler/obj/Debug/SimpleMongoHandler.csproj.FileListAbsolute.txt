@@ -1,0 +1,14 @@
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\obj\Debug\SimpleMongoHandler.csprojResolveAssemblyReference.cache
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\SingleMongoHandler.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\SingleMongoHandler.pdb
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\MongoDB.Bson.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\MongoDB.Driver.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\MongoDB.Bson.xml
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\MongoDB.Driver.xml
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\obj\Debug\SingleMongoHandler.dll
+C:\Users\Frank\Documents\Visual Studio 2015\Projects\SimpleMongoHandler\SimpleMongoHandler\obj\Debug\SingleMongoHandler.pdb
