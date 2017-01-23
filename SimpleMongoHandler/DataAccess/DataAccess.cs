@@ -4,11 +4,11 @@ using SimpleMongoHandler.Configurations;
 
 namespace SimpleMongoHandler.DataAccess
 {
-    public class DataAccess
+    public class Connection
     {
         protected static IMongoClient _client;
         protected static IMongoDatabase _database;
-        static IMongoDatabase ConnectDB()
+        private static IMongoDatabase Connect()
         {
             GetConfiguration getConf = new GetConfiguration();
             #region Without Credentials
@@ -20,10 +20,10 @@ namespace SimpleMongoHandler.DataAccess
             #endregion
         }
 
-        public IMongoCollection<BsonDocument> LogCollection()
+        public IMongoCollection<BsonDocument> Get()
         {
             GetConfiguration getConf = new GetConfiguration();
-            return ConnectDB().GetCollection<BsonDocument>(getConf.GetConfig(GetConfiguration.ConfigType.Collection));
+            return Connect().GetCollection<BsonDocument>(getConf.GetConfig(GetConfiguration.ConfigType.Collection));
         }
     }
 }
