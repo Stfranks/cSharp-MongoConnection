@@ -2,12 +2,13 @@
 using SimpleMongoHandler.Helper;
 using MongoDB.Bson;
 using SimpleMongoHandler.DataAccess;
-
+using NLog;
 namespace SimpleMongoHandler.Services
 {
     public class Service
     {
         public Connection Con = new Connection();
+        private static Logger log = LogManager.GetCurrentClassLogger();
         public void Insert(string jsonObject)
         {
             bool isValidJson = JsonValidator.IsValidJson(jsonObject);

@@ -1,6 +1,6 @@
 {
 	"Configuration" : {
-    "Server": "mongodb://192.168.1.42/NLog", 
+    "Server": "mongodb://192.168.1.117/NLog",
     "DataBase" : "NLog", 
 		"Collection" : "restaurants",
         "Credentials" : ""

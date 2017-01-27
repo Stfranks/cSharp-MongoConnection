@@ -1,20 +1,28 @@
 ﻿using System;
 using Newtonsoft.Json;
 using System.IO;
+using NLog;
 
 namespace SimpleMongoHandler.Configurations
 {
-    public class Configuration
+
+    public class GetConfiguration
     {
-        //Properties from config file
+        private static Logger log = LogManager.GetCurrentClassLogger();
         public string Server { get; set; }
         public string DataBase { get; set; }
         public string Collection { get; set; }
         public string Credentials { get; set; }
-    }
+        public enum ConfigType { Server, Collection, DataBase, Credentials };
 
-    public class GetConfiguration
-    {
+        /// <summary>
+        /// Read json file then assigns a value depending on the needed property, this only apply for mongo credentials
+        /// </summary>
+        /// <param name="configType"></param>
+        /// <returns>
+        /// enum for credentials
+        /// Otherwise it throws the <see cref="Exception" /> object
+        /// </returns>
         public string GetConfig(ConfigType configType)
         {
             try
@@ -22,7 +30,7 @@ namespace SimpleMongoHandler.Configurations
                 using (StreamReader r = new StreamReader("/config.json"))
                 {
                     string json = r.ReadToEnd();
-                    Configuration items = JsonConvert.DeserializeObject<Configuration>(json);
+                    GetConfiguration items = JsonConvert.DeserializeObject<GetConfiguration>(json);
 
                     switch (configType)
                     {
@@ -35,7 +43,7 @@ namespace SimpleMongoHandler.Configurations
                         case ConfigType.Credentials:
                             return items.Credentials;
                         default:
-                            return "";
+                            throw new NullReferenceException();
                     }
                 }
             }
@@ -45,7 +53,6 @@ namespace SimpleMongoHandler.Configurations
                 throw new Exception("Error parsing configuration file");
             }
         }
-        public enum ConfigType { Server, Collection, DataBase, Credentials };
     }
     
 }
